@@ -5,6 +5,11 @@ const StockChart = ({ symbol, data }) => {
   const options = {
     chart: {
       type: 'candlestick',
+      animations: {
+        enabled: true,
+        easing: 'easeinout',
+        speed: 800,
+      },
     },
     title: {
       text: `${symbol} Stock Price`,
